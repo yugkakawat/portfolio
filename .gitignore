@@ -1,0 +1,33 @@
+# OS-specific
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Node/npm (if used later)
+node_modules/
+.npm/
+
+# Logs
+*.log
+logs/
+
+# Editors/IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# Build output (if any)
+dist/
+build/
+.tmp/
+.cache/
+
+# Env/config
+.env
+.env.*
+
+# Misc
+*.zip
+*.tar
+*.tgz
