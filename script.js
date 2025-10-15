@@ -1,4 +1,3 @@
-
 // Typing effect
 document.addEventListener('DOMContentLoaded', function(){
   if(window.Typed){
@@ -34,4 +33,37 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   }, {threshold: 0.15});
   document.querySelectorAll('.section, .article').forEach(s=>obs.observe(s));
+});
+
+
+// ------------------------------------------
+// 📰 Load Markdown Article (for article.html)
+// ------------------------------------------
+
+document.addEventListener("DOMContentLoaded", async () => {
+  const contentDiv = document.getElementById("content");
+  if (!contentDiv) return; // Only run this on article.html
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const file = urlParams.get("file");
+
+  if (!file) {
+    contentDiv.innerHTML = "<p>No article specified.</p>";
+    return;
+  }
+
+  try {
+    const res = await fetch(`articles/${file}`);
+    if (!res.ok) throw new Error("File not found");
+    const text = await res.text();
+
+    // Render markdown using Marked.js
+    if (window.marked) {
+      contentDiv.innerHTML = marked.parse(text);
+    } else {
+      contentDiv.innerHTML = "<p>Markdown renderer not loaded.</p>";
+    }
+  } catch (err) {
+    contentDiv.innerHTML = `<p>⚠️ Error loading article: ${err.message}</p>`;
+  }
 });
