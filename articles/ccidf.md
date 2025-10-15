@@ -1,3 +1,5 @@
+Title: Role of Artificial Intelligence in Cyber Crime Investigation
+
 Introduction
 
 In the digital age, cybercrime has become one of the most significant challenges faced by individuals, corporations, and governments worldwide. With the increasing complexity of cyber-attacks, traditional investigation methods are no longer sufficient to identify, track, and prosecute cybercriminals. This has led to the adoption of advanced technologies like Artificial Intelligence (AI) in cybercrime investigation and digital forensics. AI, through its abilities in automation, pattern recognition, and predictive analysis, is revolutionizing the way digital crimes are investigated.
