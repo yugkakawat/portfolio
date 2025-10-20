@@ -1,4 +1,5 @@
 Title: Applications of Artificial Intelligence in Cybersecurity
+
 Introduction
 
 In the modern digital world, cybersecurity has become one of the most critical concerns for individuals, organizations, and governments. As technology evolves, so do cyber threats — from malware and phishing to sophisticated ransomware and zero-day attacks. Traditional security methods that rely on predefined rules are no longer sufficient to combat these adaptive and complex threats.
