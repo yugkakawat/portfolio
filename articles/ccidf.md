@@ -1,4 +1,5 @@
 Title: Role of Artificial Intelligence in Cyber Crime Investigation
+
 Introduction
 
 The rapid advancement of technology has transformed the landscape of crime and investigation. Cyber crimes, which exploit digital platforms, networks, and devices, are becoming increasingly sophisticated, making traditional investigative methods insufficient. To tackle these challenges, law enforcement agencies and cybersecurity professionals are increasingly turning to Artificial Intelligence (AI). AI’s capabilities in data analysis, pattern recognition, and predictive modeling have made it a critical tool in the fight against cyber crime.
