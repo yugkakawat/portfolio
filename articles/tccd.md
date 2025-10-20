@@ -1,4 +1,5 @@
 Title : Applications of Graph Theory in Computer Science
+
 Introduction
 
 Graph Theory is one of the most powerful branches of Discrete Mathematics. It provides a mathematical way to represent and study relationships between objects. In simple terms, a graph is a collection of nodes (vertices) and connections (edges) that link them. Although this sounds abstract, graphs are everywhere — in social networks, transportation systems, computer networks, and even in Google’s search algorithms.
