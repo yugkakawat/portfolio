@@ -23,11 +23,16 @@ Directed Graphs (Digraphs): Edges have directions. Example: Instagram following 
 Graphs can also be weighted (edges have values, like distances or costs) or unweighted (all edges are equal).
 
 Visual Representation Example
-     (A) ----5---- (B)
-      |  \          |
-     2|   \3        |4
-      |    \        |
-     (C)----1-----(D)
+          (A)
+         /   \
+       2/     \5
+       /       \
+     (C)---1---(D)
+       \       /
+       3\     /4
+         \   /
+          (B)
+
 
 
 Here, the nodes A, B, C, and D represent vertices, and the numbers on the edges represent weights (distances or costs).
