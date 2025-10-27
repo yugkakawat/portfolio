@@ -67,3 +67,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     contentDiv.innerHTML = `<p>⚠️ Error loading article: ${err.message}</p>`;
   }
 });
+
+function loadVideo(wrapperId, videoId) {
+  const wrapper = document.getElementById(wrapperId);
+  wrapper.innerHTML = '<iframe src="https://drive.google.com/file/d/' + videoId + '/preview?autoplay=1" width="100%" height="315" allow="autoplay" frameborder="0" allowfullscreen></iframe>';
+}
