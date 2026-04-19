@@ -1,186 +1,104 @@
 <!doctype html>
+
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Yug Kakawat — Portfolio</title>
-  <meta name="description" content="Portfolio of Yug Kakawat — CYSE 3rd year. Links to LinkedIn, GitHub, articles and projects."/>
+  <meta name="description" content="Portfolio of Yug Kakawat — CYSE 3rd year."/>
   <link rel="stylesheet" href="styles.css">
-  <!-- GSAP for animations (CDN) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
-  <!-- Typed.js for typing hero effect -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
   <script src="script.js" defer></script>
 </head>
+
 <body>
   <header class="site-header">
     <div class="brand">Yug Kakawat</div>
     <nav class="nav">
-      <a href="#home" class="navlink">Home</a>
-      <a href="#about" class="navlink">About</a>
-      <a href="#projects" class="navlink">Work</a>
-      <a href="#videos" class="navlink">Videos</a>
-      <a href="articles.html" class="navlink">Articles</a>
-      <a href="#contact" class="navlink">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Work</a>
+      <a href="#videos">Videos</a>
+      <a href="articles.html">Articles</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
   </header>
 
   <main>
-    <section id="home" class="hero">
-      <div class="hero-left">
-        <h1>Hello — I'm <span class="accent">Yug Kakawat</span></h1>
-        <h2 class="typed"></h2>
-        <p class="lead">CYSE — 3rd Year · Aspiring Software & Cybersecurity Engineer · Creator</p>
-        <div class="cta">
-          <a class="btn" href="#projects">See my work</a>
-          <a class="btn btn-outline" href="https://github.com/yugkakawat" target="_blank" rel="noopener">GitHub</a>
-        </div>
-        <div class="socials">
-          <a href="https://www.linkedin.com/in/yug-kakawat/" target="_blank" rel="noopener">LinkedIn</a> ·
-          <a href="https://github.com/yugkakawat" target="_blank" rel="noopener">GitHub</a> ·
-          <a href="mailto:yug.18151@sakec.ac.in">Email</a>
-        </div>
+
+```
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-left">
+    <h1>Hello — I'm <span class="accent">Yug Kakawat</span></h1>
+    <h2 class="typed"></h2>
+    <p class="lead">CYSE — 3rd Year · Cybersecurity & Software Enthusiast</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section about">
+  <h3 class="section-title">About Me</h3>
+  <p>I build web projects and explore cybersecurity concepts.</p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section projects">
+  <h3 class="section-title">Selected Projects</h3>
+  <div class="projects-grid">
+    <article class="project-card">
+      <h4>Interactive Portfolio</h4>
+      <p>Personal portfolio website with animations and articles.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ✅ UPDATED VIDEO SECTION -->
+<section id="videos" class="section videos-section">
+  <h3 class="section-title">SLA2</h3>
+
+  <div class="videos-grid">
+
+    <!-- CMCS -->
+    <div class="video-card">
+      <div class="video-thumbnail-wrapper">
+        <div class="video-title-overlay gradient-blue">CMCS</div>
+        <iframe src="https://drive.google.com/file/d/1nzvWLLhAQQUWb_Zft-uPU9Fk0o1kkdIc/preview" class="video-preview"></iframe>
       </div>
-      <div class="hero-right">
-        <div class="card avatar-card">
-          <img src="avatar.png" alt="Yug Kakawat avatar" class="avatar">
-          <div class="wave" aria-hidden="true"></div>
-        </div>
+      <div class="video-info">
+        <p>Cyber Management & Cyber Security</p>
+        <a href="https://drive.google.com/file/d/1nzvWLLhAQQUWb_Zft-uPU9Fk0o1kkdIc/view" target="_blank">Watch Full Video</a>
       </div>
-    </section>
+    </div>
 
-    <section id="about" class="section about">
-      <h3 class="section-title">About Me</h3>
-      <div class="about-grid">
-        <div>
-          <p><strong>Name:</strong> Yug Kakawat</p>
-          <p><strong>Course:</strong> CYSE — 3rd Year</p>
-          <p><strong>Email:</strong> yug.18151@sakec.ac.in</p>
-        </div>
-        <div>
-          <p>I build interactive, accessible, and animated web projects. I'm passionate about cybersecurity, system design, and learning through building.</p>
-          <p>Skills: HTML · CSS · JavaScript · Git · Basic Linux · Networking · Intro Cybersecurity</p>
-        </div>
+    <!-- CNS -->
+    <div class="video-card">
+      <div class="video-thumbnail-wrapper">
+        <div class="video-title-overlay gradient-green">CNS</div>
+        <iframe src="https://drive.google.com/file/d/1qDEREf9Lc0o-6jbS5L0U9_QqoJTW4CB9/preview" class="video-preview"></iframe>
       </div>
-    </section>
-
-    <section id="projects" class="section projects">
-      <h3 class="section-title">Selected Projects</h3>
-      <div class="projects-grid">
-        <article class="project-card">
-          <h4>Interactive Portfolio (this site)</h4>
-          <p>Animated single-page portfolio showcasing projects, articles and contact details. Built with modern JS animations.</p>
-          <div class="project-tags"><span>HTML</span><span>CSS</span><span>GSAP</span></div>
-          <div class="project-links">
-            <a href="https://github.com/yugkakawat" target="_blank" rel="noopener">Source</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <h4>Mini CTF Playground</h4>
-          <p>A learning playground with small capture-the-flag challenges to practice basic web security concepts (concept project).</p>
-          <div class="project-tags"><span>Security</span><span>Node</span><span>Labs</span></div>
-        </article>
-
-        <article class="project-card">
-          <h4>Data Dashboard</h4>
-          <p>Responsive dashboard mockup for visualizing dataset summaries and metrics with charts and filters.</p>
-          <div class="project-tags"><span>JS</span><span>Charts</span><span>UX</span></div>
-        </article>
+      <div class="video-info">
+        <p>Computer Networks & Security</p>
+        <a href="https://drive.google.com/file/d/1qDEREf9Lc0o-6jbS5L0U9_QqoJTW4CB9/view" target="_blank">Watch Full Video</a>
       </div>
-    </section>
+    </div>
 
-    <!-- === VIDEO PRESENTATIONS SECTION === -->
-    <section id="videos" class="section videos-section">
-      <h3 class="section-title">My Video Presentations</h3>
-      
-      <div class="videos-grid">
-        <!-- Video Card 1: Theory of Computation & Compiler Design -->
-        <div class="video-card">
-          <div class="video-thumbnail-wrapper">
-            <div class="video-title-overlay gradient-blue">Theory of Computation & Compiler Design</div>
-            <iframe src="https://drive.google.com/file/d/1D34Wt0LPUmPZ0Oh1ecPXGnfpX-ERL5jU/preview" class="video-preview" frameborder="0"></iframe>
-          </div>
-          <div class="video-info">
-            <p class="video-description">Applications of Graph Theory in Computer Science</p>
-            <a href="https://drive.google.com/file/d/1D34Wt0LPUmPZ0Oh1ecPXGnfpX-ERL5jU/view?usp=drive_link" target="_blank" class="watch-full-btn gradient-btn-blue">
-              ▶ Watch Full Video
-            </a>
-          </div>
-        </div>
+  </div>
+</section>
 
-        <!-- Video Card 2: Software Engineering Project Management -->
-        <div class="video-card">
-          <div class="video-thumbnail-wrapper">
-            <div class="video-title-overlay gradient-green">Software Engineering Project Management</div>
-            <iframe src="https://drive.google.com/file/d/1_hhyAm1VHFH_UmR_210fgdbooZFqV02f/preview" class="video-preview" frameborder="0"></iframe>
-          </div>
-          <div class="video-info">
-            <p class="video-description">Object-Oriented Analysis & Design (OOAD)</p>
-            <a href="https://drive.google.com/file/d/1_hhyAm1VHFH_UmR_210fgdbooZFqV02f/view?usp=drive_link" target="_blank" class="watch-full-btn gradient-btn-green">
-              ▶ Watch Full Video
-            </a>
-          </div>
-        </div>
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <h3 class="section-title">Contact</h3>
+  <p>Email: yug.18151@sakec.ac.in</p>
+</section>
+```
 
-        <!-- Video Card 3: Cyber Crime Investigation & Digital Forensics -->
-        <div class="video-card">
-          <div class="video-thumbnail-wrapper">
-            <div class="video-title-overlay gradient-red">Cyber Crime Investigation & Digital Forensics</div>
-            <iframe src="https://drive.google.com/file/d/1AM042eJQsJXnddKCSY99HBZM7liAAlQ3/preview" class="video-preview" frameborder="0"></iframe>
-          </div>
-          <div class="video-info">
-            <p class="video-description">Role of Artificial Intelligence in Cyber Crime Investigation</p>
-            <a href="https://drive.google.com/file/d/1AM042eJQsJXnddKCSY99HBZM7liAAlQ3/view?usp=drive_link" target="_blank" class="watch-full-btn gradient-btn-red">
-              ▶ Watch Full Video
-            </a>
-          </div>
-        </div>
-
-        <!-- Video Card 4: Data Warehousing & Mining -->
-        <div class="video-card">
-          <div class="video-thumbnail-wrapper">
-            <div class="video-title-overlay gradient-purple">Data Warehousing & Mining</div>
-            <iframe src="https://drive.google.com/file/d/1gK2XxOqjz1zGE8UvF4dmSDCyIU17FV17/preview" class="video-preview" frameborder="0"></iframe>
-          </div>
-          <div class="video-info">
-            <p class="video-description">The Role of ETL (Extract, Transform, Load) in Data Warehousing</p>
-            <a href="https://drive.google.com/file/d/1gK2XxOqjz1zGE8UvF4dmSDCyIU17FV17/view?usp=drive_link" target="_blank" class="watch-full-btn gradient-btn-purple">
-              ▶ Watch Full Video
-            </a>
-          </div>
-        </div>
-
-        <!-- Video Card 5: Cyber Security Principles and Practices -->
-        <div class="video-card">
-          <div class="video-thumbnail-wrapper">
-            <div class="video-title-overlay gradient-orange">Cyber Security Principles and Practices</div>
-            <iframe src="https://drive.google.com/file/d/1VUmqsnmGxGjtjvLvfIsMgQQ9O41XzUAG/preview" class="video-preview" frameborder="0"></iframe>
-          </div>
-          <div class="video-info">
-            <p class="video-description">Applications of Artificial Intelligence in Cybersecurity</p>
-            <a href="https://drive.google.com/file/d/1VUmqsnmGxGjtjvLvfIsMgQQ9O41XzUAG/view?usp=drive_link" target="_blank" class="watch-full-btn gradient-btn-orange">
-              ▶ Watch Full Video
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <h3 class="section-title">Contact</h3>
-      <p>If you'd like to get in touch, email me at <a href="mailto:yug.18151@sakec.ac.in">yug.18151@sakec.ac.in</a> or connect on <a href="https://www.linkedin.com/in/yug-kakawat/">LinkedIn</a>.</p>
-      <div class="contact-cards">
-        <div class="mini-card">Email: yug.18151@sakec.ac.in</div>
-        <div class="mini-card">LinkedIn: yug-kakawat</div>
-        <div class="mini-card">GitHub: yugkakawat</div>
-      </div>
-    </section>
-
-    <footer class="site-footer">
-      <p>Designed & Built by Yug Kakawat · CYSE 3rd Year · © 1760464067</p>
-    </footer>
   </main>
+
+  <footer class="site-footer">
+    <p>© Yug Kakawat</p>
+  </footer>
+
 </body>
 </html>
